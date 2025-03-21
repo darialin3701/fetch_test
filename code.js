@@ -1,14 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
   const apiKey = 'ebbe750a60644d6bb7f160946252103';
 
+  const searchText = document.getElementById('searchText");
+  const buttonSearch = document.getElementById('buttonSearch");
+  const tableData = document.getElementById('tableData");
+
   const fetchData = async (cityName) => {
-    const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi=no&lang=ru`)
-    const responesJSON = await response.json();
-    return responesJSON;
+    try {
+      const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi=no&lang=ru`)
+      const responesJSON = await response.json();
+      return responesJSON;
+    } catch (error) {
+      console.log('error', error);
+    }
   }
 
-  fetchData ('Odintsovo');
-  fetchData ('London');
-  fetchData ('Moscow');
-  fetchData ('Sochi');
+  buttonSearch.addEventListener('click', () => {
+    
+  })
 });
