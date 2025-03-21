@@ -15,7 +15,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  buttonSearch.addEventListener('click', () => {
-    
+  buttonSearch.addEventListener('click', async () => {
+    const name = searchText.value;
+    if (!name) {
+      alert('Введите название города');
+    } else {
+      const data = await fetchData(name);
+      console.log(data);
+    }
   })
 });
