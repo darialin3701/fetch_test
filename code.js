@@ -32,6 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
       tdWeather.innerText = data.current.condition.text;
       tr.appendChild(tdWeather);
       tableData.appendChild(tr);
-    })
+    }
   })
 });
