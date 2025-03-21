@@ -5,7 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const response = await fetсh(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi=no&lang=ru`)
     console.log(response);
   }
-  
+
+  fetchData ('Odintsovo');
   fetchData ('London');
   fetchData ('Moscow');
   fetchData ('Sochi');
