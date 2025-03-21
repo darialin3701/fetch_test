@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log(response);
   }
   
-  fetchData ('Odintsovo');
+  fetchData ('London');
   fetchData ('Moscow');
   fetchData ('Sochi');
 });
