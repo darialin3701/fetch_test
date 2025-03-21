@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log('error', error);
     }
   }
-
+  
   buttonSearch.addEventListener('click', async () => {
     const name = searchText.value;
     if (!name) {
