@@ -8,6 +8,5 @@ document.addEventListener("DOMContentLoaded", () => {
   
   fetchData ('Odintsovo');
   fetchData ('Moscow');
-  fetchData ('London');
   fetchData ('Sochi');
 });
